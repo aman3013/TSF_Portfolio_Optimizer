@@ -10,3 +10,4 @@ statsmodels
 scipy
 pmdarima
 prophet
+streamlit
