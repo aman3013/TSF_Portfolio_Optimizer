@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import tensorflow as tf
 from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.compat.v1.keras.models import Sequential
-from tensorflow.compat.v1.keras.layers import LSTM, Dense
+import tensorflow as tf  # Corrected import for TensorFlow
+from tensorflow.keras.models import Sequential  # Import Sequential from tf.keras
+from tensorflow.keras.layers import LSTM, Dense  # Corrected import for LSTM and Dense layers
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from math import sqrt
 import yfinance as yf
@@ -105,7 +107,6 @@ def optimize_portfolio():
     print("Portfolio optimization logic should be implemented here.")
 
 # Main function to run the analysis
-# Main function to run the analysis
 def main():
     bnd_data = load_data('../data/cleaned_BND_data.csv')
     spy_data = load_data('../data/cleaned_SPY_data.csv')
@@ -167,4 +168,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
