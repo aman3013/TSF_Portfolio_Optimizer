@@ -10,3 +10,5 @@ statsmodels
 scipy
 pmdarima
 prophet
+streamlit
+folium
